@@ -14,7 +14,7 @@ theta1 = 185;                               //limite superior
 for i=1:size(A,1)
     for j=1:size(A,2)
         if ((A(i,j) > theta0) & (A(i,j) < theta1))  then
-            B(i,j) = 1;
+            B(i,j) = 255;
         else
             B(i,j) = 0;
         end
@@ -22,9 +22,9 @@ for i=1:size(A,1)
 end
 
 //figure();
-//imshow(B);
+//imshow(B,map);
 
-imwrite(B, 'figs/snowman_threshold.jpg');
+imwrite(B, map, 'figs/snowman_threshold.jpg');
 
 //figure();
 //histplot(100, B);                             //plota histograma da imagem B
