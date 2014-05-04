@@ -12,7 +12,7 @@ theta = 0.78;                                   //limite
 
 for i=1:size(A,1)
     for j=1:size(A,2)
-        if (A(i,j) > 0.78) then
+        if (A(i,j) > theta) then
             B(i,j) = 0;
         else
             B(i,j) = 1;
