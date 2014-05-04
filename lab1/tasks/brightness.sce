@@ -2,6 +2,10 @@
 //Tarefa 3.1 - Brightness and clipping
 //Dayany Espindola
 
+clear;
+clc;
+exec('/usr/local/share/scilab/contrib/sip-0.12.0-SNAPSHOT/loader.sce');
+
 [A,map] = imread('../figs/ImageA.jpg'); //leitura da imagem em escala de cinza
 //imshow(A,map);                          //plota imagem
 

@@ -2,6 +2,10 @@
 //Tarefa 2.1 - Thresholding
 //Dayany Espindola
 
+clear;
+clc;
+exec('/usr/local/share/scilab/contrib/sip-0.12.0-SNAPSHOT/loader.sce');
+
 A = gray_imread('../figs/white_blood_cells.png'); //leitura da imagem em escala de cinza
 //imshow(A);                                    //plota imagem
 
